@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise!!</title>
+</head>
+<body>
+    <h1 id="h1">Surprise</h1>
+    <audio src="Happy_Birthday_-_Jazzaria.mp3" controls hidden autoplay></audio>
+    <h3>Which teacher is best</h3>
+    <button class="btn" onclick="wrong()">Aakash Sir</button>
+    <span><button class="btn" onclick="wrong()">Virendra Sir</button></span>
+    <button class="btn" onclick="wrong()">Neha Ma'am</button>
+    <button class="btn" onclick="wrong()">Mohan Sir</button>
+    <button class="btn" onclick="correct()">All of them</button>
+    <p id="p"></p>
+    <script>
+        function wrong() {
+            document.getElementById("p").innerHTML = ("Opps!! Your answer is wrong");
+        }
+        function correct() {
+            document.getElementById("p").innerHTML = ("Your answer is correct!! Every teacher is best in our life!");
+        }
+    </script>
+    <style>
+        body {
+            text-align: center;
+            background: rgb(116, 204, 255);
+        }
+        #h1 {
+            color: red;
+        }
+        .btn {
+            background: rgb(255, 255, 37);
+            color: red;
+        }
+    </style>
+</body>
+</html>
